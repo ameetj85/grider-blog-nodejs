@@ -31,6 +31,12 @@ app.post('/events', (req, res) => {
     console.log('Unable to post to 4002');
   }
 
+  try {
+    axios.post('http://localhost:4003/events', event);
+  } catch (error) {
+    console.log('Unable to post to 4003');
+  }
+
   res.send({ status: 'OK' });
 });
 
