@@ -35,7 +35,7 @@ app.post('/posts', async (req, res) => {
       },
     });
   } catch (error) {
-    console.log(error);
+    console.log('Unable to send message to 4005');
   }
 
   res.status(201).send(posts[id]);
