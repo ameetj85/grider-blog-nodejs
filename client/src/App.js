@@ -3,8 +3,6 @@ import PostCreate from './PostCreate';
 import PostList from './PostList';
 
 const App = () => {
-  console.log('React app started.');
-
   return (
     <div className='container'>
       <h1>Create A New Post</h1>
